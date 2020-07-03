@@ -1,6 +1,6 @@
 ﻿// =============================================================================
 // AB_EquipUpgrade.js
-// Version: 0.04
+// Version: 1.00
 // -----------------------------------------------------------------------------
 // Copyright (c) 2017 ヱビ
 // Released under the MIT license
@@ -12,7 +12,7 @@
 
 
 /*:
- * @plugindesc v0.04 装備している装備を強化するプラグインです。
+ * @plugindesc v1.00 装備している装備を強化するプラグインです。
  * @author ヱビ
  * 
  * @param NextGradeName
@@ -82,6 +82,9 @@
  * ============================================================================
  * 更新履歴
  * ============================================================================
+ * 
+ * Version 1.00
+ *   初回に顔グラが表示されない不具合を修正。
  * 
  * Version 0.04
  *   初回に顔グラが表示されない不具合を修正。
@@ -535,6 +538,7 @@
 	};
 	Scene_EquipUpgradeSelectActor.prototype.start = function() {
 		Scene_MenuBase.prototype.start.call(this);
+		this._statusWindow.refresh();
 		this._statusWindow.activate();
 		this._statusWindow.select(0);
 	};
