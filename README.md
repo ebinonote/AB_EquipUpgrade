@@ -18,10 +18,10 @@
 
 ### 武器、防具のメモ欄のタグ：
 
-  <NextGrade:x>  
+  &lt;NextGrade:x&gt;  
     IDxの武器（防具）にアップグレードできるようになります。
 
-  <UpgradeCost>  
+  &lt;UpgradeCost&gt;  
   item id  
   item id: x  
   weapon id  
@@ -29,15 +29,15 @@
   armor id  
   armor id: x  
   gold: x  
-  </UpgradeCost>  
+  &lt;/UpgradeCost&gt;  
     idにアイテムのIDを、xに個数を設定します。
   
   例：  
-  <UpgradeCost>  
+  &lt;UpgradeCost&gt;  
   item 1  
   item 2: 3  
   gold: 300  
-  </UpgradeCost>  
+  &lt;/UpgradeCost&gt;  
     ID１のアイテムを1つ、ID2のアイテムを3つ、お金を300G必要とします。
 
 
